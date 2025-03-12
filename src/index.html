@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dhigaal Book</title>
     <link rel="stylesheet" href="output.css">
+    
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
         </style>
@@ -12,19 +13,19 @@
 <body>
     <div class="w-full h-svh bg-[url(/images/bg.jpg)] bg-cover overflow-hidden">
         <div class="container flex justify-between py-5 w-full px-5 items-center">
-            <img class="h-16" src="/images/logo-02.png" alt="">
+            <img class="h-16 cursor-pointer" src="/images/logo-02.png" alt="">
             <ul id="menu" class="hidden flex-col md:flex md:flex-row bg-[#E2FE26] md:bg-transparent text-black md:text-white md:space-x-6   absolute md:static text-center left-0 right-9 top-20 md:top-auto space-y-3 text-2xl">
-                <li>Home</li>
-                <li>Product</li>
-                <li>community</li>
-                <li>Contact Us</li>
+                <li class="hover:text-[#E2FE26] transition">Home</li>
+                <li class="hover:text-[#E2FE26] transition">Product</li>
+                <li class="hover:text-[#E2FE26] transition">community</li>
+                <li class="hover:text-[#E2FE26] transition">Contact Us</li>
             </ul>
             <div class="flex items-center gap-4">
-                <button class="hidden items-center gap-2 md:flex bg-[#E2FE26] rounded-full px-5 py-2">
+                <button class="hidden hover:bg-transparent hover:text-white ring-1 hover:ring-[#E2FE26] items-center gap-2 md:flex bg-[#E2FE26] rounded-full px-5 py-2">
                     Wallet Connect
                     <ion-icon name="arrow-forward-outline"></ion-icon>
                 </button>
-                <ion-icon name="cart-outline" class="text-white text-4xl"></ion-icon>
+                <ion-icon name="cart-outline" class="text-white text-4xl hover:text-[#E2FE26] transition"></ion-icon>
                 <img id="menu-icon" src="/images/menu-icon-02-03.png" class="w-12 md:hidden" alt="">
             </div>
         </div>
@@ -33,75 +34,107 @@
             <p class="text-gray-200 text-xl">Reading is the best way to enhance the mind and knowledge <br>
                 It helps a person understand new ideas, acquire new skills, and develop their intellect </p>
                 <div class="flex flex-col gap-y-4 md:flex md:flex-row justify-center items-center md:gap-x-4 mt-5">
-                    <button class="bg-[#E2FE26] rounded-full px-5 py-2 hover:scale-150 transition">
+                    <button class="bg-[#E2FE26] rounded-full px-5 py-2 hover:bg-transparent hover:text-white ring-1 hover:ring-[#E2FE26]">
                         Wallet Connect
                         <ion-icon name="arrow-forward-outline"></ion-icon>
                     </button>
-                    <button class="bg-white rounded-full px-5 py-2 hover:scale-150 transition">
+                    <button class="bg-white rounded-full px-5 py-2 hover:bg-transparent hover:text-white ring-1 hover:ring-white">
                         Wallet Connect
                         <ion-icon name="arrow-forward-outline"></ion-icon>
                     </button>
                 </div>
         </div>
     </div>
-    <!-- new section -->
-     <div class="container mx-auto h-screen mt-12">
-        <h3 class="text-5xl font-[Roboto] font-bold text-center my-10">Famous <span class="text-[#E2FE26]">Books</span></h3>
-        <div class="grid grid-cols-4 gap-x-10 w-[90%] mx-auto ">
-            <div class="shadow-xl rounded-xl px-4 py-2 bg-gray-100 ">
-                <img class="w-full rounded-xl" src="/images/Righdad-01.png" alt="">
-                <h3>Rich Dad</h3>
-                <h3>$22</h3>
-                <button class="bg-[#E2FE26] rounded-full px-4 py-2 mt-2">Buy Now</button>
-            </div>
-            <div class="shadow-xl rounded-xl px-4 py-2 bg-gray-100 ">
-                <img class="w-full rounded-xl" src="/images/7habit-01.png" alt="">
-                <h3>Habit</h3>
-                <h3>$32</h3>
-                <button class="bg-[#E2FE26] rounded-full px-4 py-2 mt-2">Buy Now</button>
-            </div>
-            <div class="shadow-xl rounded-xl px-4 py-2 bg-gray-100 ">
-                <img class="w-full rounded-xl" src="/images/learnstatup-01.png" alt="">
-                <h3>Learn Statup</h3>
-                <h3>$27</h3>
-                <button class="bg-[#E2FE26] rounded-full px-4 py-2 mt-2">Buy Now</button>
-            </div>
-            <div class="shadow-xl rounded-xl px-4 py-2 bg-gray-100 ">
-                <img class="w-full rounded-xl" src="/images/lightout-01.png" alt="">
-                <h3>Light Out</h3>
-                <h3>$18</h3>
-                <button class="bg-[#E2FE26] rounded-full px-4 py-2 mt-2">Buy Now</button>
-            </div>
-        </div>
-        <!-- qeybta islamic -->
-        <h3 class="text-5xl font-[Roboto] font-bold text-center my-10">Islamic <span class="text-[#E2FE26]">Books</span></h3>
-            <div class="grid grid-cols-4 gap-x-10 w-[90%] mx-auto ">
-                
-                    <div class="shadow-xl rounded-xl px-4 py-2 bg-gray-100 ">
-                        <img class="w-full rounded-xl" src="/images/3f6b7f50-86f3-4c3a-b02e-e87f5e03bbd5.png" alt="">
-                        <h3>رسائل من القرآن</h3>
-                        <h3>تأليف أدهم شرقاوي</h3>
-                        <h3>$48</h3>
-                        <button class="bg-[#E2FE26] rounded-full px-4 py-2 mt-2">Buy Now</button>
-                    </div>
-                    <div class="shadow-xl rounded-xl px-4 py-2 bg-gray-100 ">
-                        <img class="w-full rounded-xl" src="/images/haruun.png" alt="">
-                        <h3>هارون الرشيد</h3>
-                        <h3>$61</h3>
-                        <button class="bg-[#E2FE26] rounded-full px-4 py-2 mt-2">Buy Now</button>
-                    </div>
-                    <div class="shadow-xl rounded-xl px-4 py-2 bg-gray-100 ">
-                        <img class="w-full rounded-xl" src="/images/sahaaba.png" alt="">
-                        <h3>رسائل من الصّحابة</h3>
-                        <h3>$21</h3>
-                        <button class="bg-[#E2FE26] rounded-full px-4 py-2 mt-2">Buy Now</button>
-                    </div>
+    <!-- qeybta 1aad -->
+     <div class="container mx-auto h-full  mt-12">
+        <h3 class="text-7xl font-[Roboto] font-bold text-center my-10">Our <span class="text-[#E2FE26]">Books</span></h3>
+        <div id="ProductCard" class="md:grid md:grid-cols-4 grid grid-cols-1  md:gap-x-10 gap-y-10 w-[90%] mx-auto ">
 
-                
-            </div>
+            <!-- Rich Dad -->
+            <!-- Habit -->
+            <!-- Learn Statup -->
+            <!-- Light Out -->
+
+        </div>
      </div>
     <script src="main.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+                    <!-- footer -->
+
+    <footer class="bg-gray-900 text-gray-300 py-12 mt-20">
+        <div class="container mx-auto px-4">
+          <!-- Main Footer Content -->
+          <div class="md:flex md:justify-between">
+            <!-- Company Info -->
+            <div class="mb-8 md:mb-0 md:max-w-xs">
+              <h2 class="text-2xl font-bold text-white mb-4">Dhigaal Books</h2>
+              <p class="mb-4">Welcome to Dhigaal Book – where stories come alive and knowledge finds its home.</p>
+              <div class="mt-4">
+                <a href="https://g.co/kgs/PmpPeVy">
+                    <p class="mb-1">Email: aboodefarah7@gmail.com</p>
+                </a>
+                <p>Address: jidka sodonka , mogadishu</p>
+              </div>
+            </div>
+      
+            <!-- Quick Links Columns -->
+            <div class="grid grid-cols-2 gap-8 md:grid-cols-3">
+              <!-- Column 1 -->
+              <div>
+                <h3 class="text-white font-semibold uppercase mb-4">About</h3>
+                <ul class="space-y-2">
+                  <li><a href="#" class="hover:text-white transition">Home</a></li>
+                  <li><a href="#" class="hover:text-white transition">Product</a></li>
+                  <li><a href="#" class="hover:text-white transition">community</a></li>
+                  <li><a href="#" class="hover:text-white transition">Contact Us</a></li>
+                </ul>
+              </div>
+      
+              <!-- Column 2 -->
+              <div>
+                <h3 class="text-white font-semibold uppercase mb-4">Resources</h3>
+                <ul class="space-y-2">
+                  <li><a href="#" class="hover:text-white transition">Documentation</a></li>
+                  <li><a href="#" class="hover:text-white transition">Guides</a></li>
+                  <li><a href="#" class="hover:text-white transition">API Reference</a></li>
+                  <li><a href="#" class="hover:text-white transition">Help Center</a></li>
+                </ul>
+              </div>
+      
+              <!-- Column 3 -->
+              <div>
+                <h3 class="text-white font-semibold uppercase mb-4">Legal</h3>
+                <ul class="space-y-2">
+                  <li><a href="#" class="hover:text-white transition">Privacy</a></li>
+                  <li><a href="#" class="hover:text-white transition">Terms</a></li>
+                  <li><a href="#" class="hover:text-white transition">Security</a></li>
+                  <li><a href="#" class="hover:text-white transition">Cookie Policy</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Divider -->
+          <hr class="my-8 border-gray-800">
+      
+          <!-- Bottom Section -->
+          <div class="md:flex md:items-center md:justify-between">
+            <!-- Social Links -->
+            <div class="flex space-x-6 mb-4 md:mb-0">
+              <a href="https://github.com/AboodeFarah" class="text-gray-400 hover:text-white transition">
+                <span class="sr-only">GitHub</span>
+                <ion-icon name="logo-github" class="text-4xl"></ion-icon>
+              </a>
+              <!-- Add other social icons similarly -->
+            </div>
+      
+            <!-- Copyright -->
+            <p class="text-sm text-gray-400">&copy; 2025 Dhigaal Book. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
 </body>
 </html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhigaal Book</title>
+    <link rel="stylesheet" href="output.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+        </style>
+</head>
+<body>
+    <div class="container bg-[#161616] flex justify-between py-5 w-full px-5 items-center">
+        <img class="h-16" src="/images/logo-02.png" alt="">
+        <ul id="menu" class="hidden flex-col md:flex md:flex-row bg-[#E2FE26] md:bg-transparent text-black md:text-white md:space-x-6   absolute md:static text-center left-0 right-9 top-20 md:top-auto space-y-3 text-2xl">
+            <li>Home</li>
+            <li>Product</li>
+            <li>community</li>
+            <li>Contact Us</li>
+        </ul>
+        <div class="flex items-center gap-4">
+            <button class="hidden items-center gap-2 md:flex bg-[#E2FE26] rounded-full px-5 py-2">
+                Wallet Connect
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+            </button>
+            <ion-icon name="cart-outline" class="text-white text-4xl"></ion-icon>
+            <img id="menu-icon" src="/images/menu-icon-02-03.png" class="w-12 md:hidden" alt="">
+        </div>
+    </div>
+
+    <div class="container mx-auto ">
+        <div class="grid grid-cols-2 gap-4 my-4">
+
+            <div class="shadow-lg py-4 px-6 ">
+
+                <h3 id="productName" class="text-7xl font-bold py-3 "></h3>
+
+                <p id="productDescription" class="text-gray-600 text-xl my-5"></p>
+
+                <h3 id="productPrice" class="text-5xl py-3"></h3>
+
+                <input type="number"
+                placeholder="Enter Phone number"
+                 class="border border-gray-300 my-7 px-8 focus:ring-2 focus:ring-blue-500 rounded-full"><br> 
+                <button class="bg-[#E2FE26] px-8 py-4 rounded-full ">Pay Now</button>
+            </div>
+            <!-- for image -->
+            <div class="shadow-lg py-4 px-6">
+                <img id="productImage" alt="">
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <script>
+      const productName=sessionStorage.getItem("productName");
+      const productDescription=sessionStorage.getItem("productDescription");
+      const productPrice=sessionStorage.getItem("productPrice");
+      const productImage=sessionStorage.getItem("productImage");
+
+      document.getElementById("productName").innerText= productName;
+      document.getElementById("productDescription").innerText= productDescription;
+      document.getElementById("productPrice").innerText= `$${productPrice}`;
+      document.getElementById("productImage").src= productImage;
+    </script>
+</body>
+</html>
